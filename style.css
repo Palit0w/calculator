@@ -1,0 +1,108 @@
+:root {
+  --body: #272727;
+  --font: #111;
+  --border: #333;
+  --calculator: #aaa;
+  --display: #eee;
+  --btn: #eee;
+  --btn-hover: #ddd;
+  --btn-active: #ccc;
+  --btn-red: #f09898;
+  --btn-red-hover: #e98c8c;
+  --btn-red-active: #ec7777;
+  --btn-blue: #b5adff;
+  --btn-blue-hover: #a298fc;
+  --btn-blue-active: #9084ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--body);
+  font-family: "Roboto", sans-serif;
+  color: var(--font);
+}
+
+.calculator {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--calculator);
+  border: 2px var(--border) solid;
+  border-radius: 10px;
+}
+
+.display {
+  min-height: 70px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: var(--display);
+  border: 2px var(--border) solid;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 28px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.two-columns {
+  grid-column: span 2;
+}
+
+.btn {
+  color: inherit;
+  background-color: var(--btn);
+  padding: 20px;
+  border: 2px var(--border) solid;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.btn:active {
+  background-color: var(--btn-active);
+}
+
+.btn-red {
+  background-color: var(--btn-red);
+}
+
+.btn-red:hover {
+  background-color: var(--btn-red-hover);
+}
+
+.btn-red:active {
+  background-color: var(--btn-red-active);
+}
+
+.btn-blue {
+  background-color: var(--btn-blue);
+}
+
+.btn-blue:hover {
+  background-color: var(--btn-blue-hover);
+}
+
+.btn-blue:active {
+  background-color: var(--btn-blue-active);
+}
+
+.xd {
+  text-align: center;
+  margin-bottom: 10px;
+}
